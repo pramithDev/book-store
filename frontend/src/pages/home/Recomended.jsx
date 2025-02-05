@@ -11,7 +11,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { useFatchAllBooksQuery } from '../../redux/features/books/booksApi';
+import { useFetchAllBooksQuery } from '../../redux/features/books/booksApi';
 
 const Recomended = () => {
     // const [books, setBooks] = useState([]);
@@ -22,7 +22,7 @@ const Recomended = () => {
     //         .then((data) => setBooks(data))
     // }, []);
 
-    const { data: books = [] } = useFatchAllBooksQuery();
+    const { data: books = [] } = useFetchAllBooksQuery();
 
     return (
         <div className='py-16'>
